@@ -32,6 +32,8 @@ Loan Term (Yrs): <asp:TextBox ID="tbLoanTerm" runat="server" ></asp:TextBox>
 Monthly Payment: &nbsp; <span class="bold" <asp:Label ID="lblMonthlyPmt" runat="server"></asp:Label></span>
 <br /><br />
 <asp:GridView ID="loanGridView" runat="server" />
+
+    <% End If %>
 </div>
 </form>
 </body>
