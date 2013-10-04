@@ -18,12 +18,12 @@ Annual Interest %: <asp:TextBox ID="tbAnnualInterest" runat="server"
     <asp:RequiredFieldValidator ID="rfvEnterInterest" runat="server" ControlToValidate="tbAnnualInterest" ErrorMessage="**Please Enter Interest"></asp:RequiredFieldValidator>
 <br /><br />
 Loan Term (Yrs): <asp:TextBox ID="tbLoanTerm" runat="server" ></asp:TextBox>
-    <asp:RequiredFieldValidator ID="rfvLoanTerm" runat="server" ErrorMessage="**Please Enter Loan Term"></asp:RequiredFieldValidator>
+    <asp:RequiredFieldValidator ID="rfvLoanTerm" runat="server" ErrorMessage="**Please Enter Loan Term" ControlToValidate="tbLoanTerm"></asp:RequiredFieldValidator>
 <br /><br />
 <asp:Button ID="btnCalcPmt" runat="server" Text="Calculate" />
 <br /><br />
 
-    <%If Not IsPostBackThen Then%>
+    <%If Not IsPostBack Then%>
     <p>Welcome to my mortgage calculator. Please complete the fields about to have your monthly paymeny and loan calculated for you.</p>
 
     <%Else %>
